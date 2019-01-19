@@ -5,49 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="assets/css/layui.css">
     <link rel="stylesheet" href="assets/css/admin.css">
-    <link rel="icon" href="/favicon.ico">
-    <title>管理后台</title>
 </head>
 <body class="layui-layout-body">
-    <div class="layui-layout layui-layout-admin">
-        <div class="layui-header">
-            
-            <ul class="layui-nav layui-layout-left">
-                <li class="layui-nav-item slide-sidebar" lay-unselect>
-                    <a href="javascript:;" class="icon-font"><i class="ai ai-menufold"></i></a>
-                </li>
-            </ul>
-
-            <ul class="layui-nav layui-layout-right">
-                <li class="layui-nav-item">
-                    <a href="javascript:;">BieJun</a>
-                    <dl class="layui-nav-child">
-                        <dd><a href="">帮助中心</a></dd>
-                        <dd><a href="login.html">退出</a></dd>
-                    </dl>
-                </li>
-            </ul>
-        </div>
-
-        <fieldset class="layui-elem-field layui-field-title" style="margin-top: 0px;">
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 0px;">
 </fieldset>
-<div class="layui-tab layui-tab-brief" style="width: 290px;" overflow="">
-  <ul class="layui-tab-title" =""="">
-    <li class="">全部活动管理</li>
-    <li class="layui-this">收淘宝天猫评价</li>
-    <li class="">每日商品优选</li>
-    <li class="">联系人工客服</li>
-  
- <div class="layui-tab-content" style="height: 100px;">
-    <div class="layui-tab-item layui-show">
-      1. 宽度足够，就不会出现右上图标；宽度不够，就会开启展开功能。
-      <br>2. 如果你的宽度是自适应的，Tab会自动判断是否需要展开，并适用于所有风格。
-    </div>
-    <div class="layui-tab-item">2</div>
-    <div class="layui-tab-item">3</div>
-    <div class="layui-tab-item">4</div>
-  </div>&lt;<span class="layui-unselect layui-tab-bar" lay-stope="tabmore" title=""><i lay-stope="tabmore" class="layui-icon"></i></span></ul></div>
-    </div>
+ 
+<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+  <ul class="layui-tab-title">
+    <li class="layui-this">网站设置</li>
+    <li>用户管理</li>
+    <li>权限分配</li>
+    <li>商品管理</li>
+    <li>订单管理</li>
+  </ul>
+  <div class="layui-tab-content" style="height: 100px;">
+    <div class="layui-tab-item layui-show">内容不一样是要有，因为你可以监听tab事件（阅读下文档就是了）</div>
+    <div class="layui-tab-item">内容2</div>
+    <div class="layui-tab-item">内容3</div>
+    <div class="layui-tab-item">内容4</div>
+    <div class="layui-tab-item">内容5</div>
+  </div>
+</div> 
 </body>
     <script src="assets/layui.js"></script>
     <script src="index.js" data-main="home"></script>
